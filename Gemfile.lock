@@ -302,6 +302,7 @@ DEPENDENCIES
   factory_girl_rails
   faker
   gibbon
+  haml
   haml-rails
   high_voltage
   html2haml

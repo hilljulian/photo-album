@@ -47,6 +47,7 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'gibbon'
+gem 'haml'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'mysql2'
