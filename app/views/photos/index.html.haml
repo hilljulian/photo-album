@@ -16,11 +16,11 @@
         %th
 
     %tbody
-      - @photos.each do |photo|
+      - @list_of_photos.each do |pic|
         %tr
-          %td= photo.title
-          %td= photo.date_taken
-          %td= photo.notes
-          %td= link_to 'Show', photo
-          %td= link_to 'Edit', edit_photo_path(photo)
-          %td= link_to 'Destroy', photo, :data => { confirm: 'Are you sure?' }, :method => :delete
+          %td= pic.title
+          %td= pic.date_taken
+          %td= pic.notes
+          %td= link_to 'Show', pic
+          %td= link_to 'Edit', edit_photo_path(pic)
+          %td= link_to 'Destroy', pic, :data => { confirm: 'Are you sure?' }, :method => :delete

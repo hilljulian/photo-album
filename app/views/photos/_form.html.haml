@@ -2,18 +2,23 @@
   -if @photo.errors.any?
     .alert.alert-danger.alert-dismissable{:role => "alert"}
       %button.close{:type => "button", :data => {:dismiss => "alert"} }
-        span{:aria => {:hidden => "true"} } &times;
-        span.sr-only Close
+        %span{:aria => {:hidden => "true"} } &times;
+        %span.sr-only Close
       %h4= "#{pluralize(@photo.errors.count, "error")} prohibited this photo from being saved:"
 
       %ul
         - @photo.errors.full_messages.each do |msg|
           %li= msg
 
+
   .form-group
     = f.label :title, :class => 'col-sm-2 control-label'
     .col-sm-10
       = f.text_field :title, :class => 'form-control'
+  .form-group
+    = f.label :photo, :class => 'col-sm-2 control-label'
+    .col-sm-10
+      = f.file_field :photo 
   .form-group
     = f.label :date_taken, :class => 'col-sm-2 control-label'
     .col-sm-10

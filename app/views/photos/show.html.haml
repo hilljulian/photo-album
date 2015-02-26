@@ -7,6 +7,11 @@
     Edit
   %h1 Show photo
 
+
+= image_tag @photo.photo.url
+= image_tag @photo.photo.url(:medium)
+= image_tag @photo.photo.url(:thumb)
+
 %dl.dl-horizontal
   %dt Title:
   %dd= @photo.title
