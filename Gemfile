@@ -55,6 +55,8 @@ gem 'stripe'
 gem 'sucker_punch'
 gem 'upmin-admin'
 
+gem 'bootstrap-generators', '~> 3.3.1'
+
 group :development do
   gem 'better_errors'
   gem 'html2haml'

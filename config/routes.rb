@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :photos
+
   resources :albums
 
   resources :coupons
