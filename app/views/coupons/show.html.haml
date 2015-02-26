@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Code:
+  = @coupon.code
+%p
+  %b Role:
+  = @coupon.role
+%p
+  %b Mailing list:
+  = @coupon.mailing_list_id
+%p
+  %b List group:
+  = @coupon.list_group
+%p
+  %b Price:
+  = @coupon.price
+
+= link_to 'Edit', edit_coupon_path(@coupon)
+\|
+= link_to 'Back', coupons_path

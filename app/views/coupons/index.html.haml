@@ -1,0 +1,29 @@
+%h1 Listing coupons
+
+%table
+  %thead
+    %tr
+      %th Code
+      %th Role
+      %th Mailing list
+      %th List group
+      %th Price
+      %th
+      %th
+      %th
+      
+  %tbody
+    - @coupons.each do |coupon|
+      %tr
+        %td= coupon.code
+        %td= coupon.role
+        %td= coupon.mailing_list_id
+        %td= coupon.list_group
+        %td= coupon.price
+        %td= link_to 'Show', coupon
+        %td= link_to 'Edit', edit_coupon_path(coupon)
+        %td= link_to 'Destroy', coupon, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Coupon', new_coupon_path
