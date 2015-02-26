@@ -1,0 +1,21 @@
+.page-header
+  = link_to photos_path, :class => 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to edit_photo_path(@photo), :class => 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    Edit
+  %h1 Show photo
+
+
+= image_tag @photo.photo.url
+= image_tag @photo.photo.url(:medium)
+= image_tag @photo.photo.url(:thumb)
+
+%dl.dl-horizontal
+  %dt Title:
+  %dd= @photo.title
+  %dt Date taken:
+  %dd= @photo.date_taken
+  %dt Notes:
+  %dd= @photo.notes

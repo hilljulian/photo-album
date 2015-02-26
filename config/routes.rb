@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :photos
+
+  resources :albums
+
   resources :coupons
 
   mount Upmin::Engine => '/admin'

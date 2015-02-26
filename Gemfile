@@ -22,6 +22,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 
+gem "paperclip", "~> 4.2"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -54,6 +56,8 @@ gem 'mysql2'
 gem 'stripe'
 gem 'sucker_punch'
 gem 'upmin-admin'
+
+gem 'bootstrap-generators', '~> 3.3.1'
 
 group :development do
   gem 'better_errors'
